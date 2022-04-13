@@ -41,11 +41,6 @@ inquirer
         },
         {
             type: 'input',
-            name: 'installation',
-            display: 'Write a description of installation instructions.',
-        },
-        {
-            type: 'input',
             name: 'test',
             display: 'Write a description of test instructions.',
         },
