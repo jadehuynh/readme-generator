@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/jadehuynh/readme-generator/issues"
   },
-  "homepage": "https://github.com/jadehuynh/readme-generator#readme",
-  "dependencies": {
-    "inquirer": "^8.2.2"
-  }
+  "homepage": "https://github.com/jadehuynh/readme-generator#readme"
 }
