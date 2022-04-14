@@ -1,13 +1,15 @@
+// // TODO: Include packages needed for this application
+
 const fs = require('fs');
 const inquirer = require('inquirer');
-
-
+const generateMarkdown = require('./assets/js/functions')
+// TODO: Create an array of questions for user input
 const promptQuestions = () => {
     return inquirer.prompt([
         {
             type: 'input',
             name: 'title',
-            message: 'Title of Project:',
+            message: 'What is the title of your project?',
         },
         {
             type: 'input',
@@ -32,83 +34,47 @@ const promptQuestions = () => {
         },
         {
             type: 'input',
+            name: 'dependencies',
+            message: 'What command should be run to install dependencies?',
+        },
+        {
+            type: 'input',
             name: 'contributing',
-            message: 'Write a description of contribution guidelines.',
+            message: 'What does the user need to know about contributing to the repo?',
         },
         {
             type: 'input',
             name: 'test',
-            message: 'Write a description of test instructions.',
+            message: 'What command should be run to run tests?',
         },
         {
             type: 'input',
             name: 'repo',
-            message: 'GitHub Repository.',
+            message: 'What does the user need to know about using the repo?',
         },
         {
             type: 'input',
             name: 'username',
-            message: 'Enter GitHub Username.',
+            message: 'What is your GitHub username?',
         },
         {
             type: 'input',
             name: 'email',
-            message: 'Write email address, and instructions ways to reach you with additional questions.',
+            message: 'What is your email address? Please provide instructions ways to reach you with additional questions.',
         },
     ])
+    //TODO: Create a function to write README file
     .then(data => {
        const results = generateMarkdown(data)
        fs.writeFileSync("./dest/README.md", results)
     })
 };
-// const init = () => {
-//     console.log(data)
+// Function call to initialize app
+const init = () => {
+    console.log(data)
     
-//      fs.writeFileSync("./dest/README.md", generateReadMe)
-//  }
+     fs.writeFileSync("./dest/README.md", generateReadMe)
+ }
  
  
- 
-//  const generateMarkdown = (answers) => {
-//  return `# ${answers.title}
- 
- 
-
-// //  ## Description
-// //  ${answers.description}
- 
-// //  ## Table of Contents
- 
-// //  - [Installation](#installation)
-// //  - [Usage](#Usage)
-// //  - [License](#License)
-// //  - [Contribution](#Contribution)
-// //  - [Test](#Test)
- 
-// //  ## Installation
-// //  ${answers.installation}
- 
-// //  ## Usage
-// //  ${answers.usage}
- 
-// //  ## License
-// //  ${answers.license}
- 
-// //  ## Contribution
-// //  ${answers.contributing}
- 
-// //  ## Test Instructions
-// //  ${answers.test}
- 
-// //  ## Questions
- 
-// //  ${answers.repo}
-// //  ${answers.username}
-// //  ${answers.email}
- 
-// //  `
-//  }
-
  promptQuestions();
-// module.exports = init
-module.exports = generateMarkdown
