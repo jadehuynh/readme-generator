@@ -2,12 +2,13 @@ const fs = require("fs")
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-    var getUrl = "https://img.shields.io/badge/license-${answers.license}-red";
-    
-    if ( ${answers.license} === null ) {
+    let licenseValue = answers.license;
+    let selectedLicense = '';
+
+    if ( answers.license ===  ) {
         return " ";
     }else {
-        return getUrl;
+        return getl;
     }
 }
 
