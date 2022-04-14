@@ -2,49 +2,58 @@ const fs = require("fs")
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-    let licenseValue = answers.license;
+    let licenseValue = license;
     let selectedLicense = '';
 
-    if ( answers.license === 'Apache2.0') {
-        return selectedLicense ='![Apache](https://img.shields.io/badge/license-Apache2.0-red)';
-    }else if ( answers.license === 'MIT') {
-        return selectedLicense ='![MIT](https://img.shields.io/badge/license-MIT-red)';
-    }else if ( answers.license === 'ISC') {
-        return selectedLicense ='![ISC](https://img.shields.io/badge/license-ISC-red)';
-    }else if ( answers.license === 'CC') {
-        return selectedLicense ='![CC](https://img.shields.io/badge/license-CC-red)';
-    }else if ( answers.license === 'Boost') {
-        return selectedLicense ='![Boost](https://img.shields.io/badge/license-Boost-red)';
+    if ( license === 'Apache2.0') {
+        return selectedLicense =`![Apache](https://img.shields.io/badge/license-Apache2.0-red)`;
+    }else if ( license === 'MIT') {
+        return selectedLicense =`![MIT](https://img.shields.io/badge/license-MIT-red)`;
+    }else if ( license === 'ISC') {
+        return selectedLicense =`![ISC](https://img.shields.io/badge/license-ISC-red)`;
+    }else if (license === 'Boost') {
+        return selectedLicense =`![Boost](https://img.shields.io/badge/license-Boost-red)`;
     }else{
-        answers.license = "Not Applicable"
+        license = "Not Applicable"
     }
     return selectedLicense;
 };
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-    let licenseValue = answers.license;
+    let licenseValue = license;
     let licenseLink = '';
 
-    if ( answers.license === 'Apache2.0') {
-        return licenseLink ='[Apache](https://img.shields.io/badge/license-Apache2.0-red)';
-    }else if ( answers.license === 'MIT') {
-        return licenseLink ='[MIT](https://img.shields.io/badge/license-MIT-red)';
-    }else if ( answers.license === 'ISC') {
-        return licenseLink ='[ISC](https://img.shields.io/badge/license-ISC-red)';
-    }else if ( answers.license === 'CC') {
-        return licenseLink ='[CC](https://img.shields.io/badge/license-CC-red)';
-    }else if ( answers.license === 'Boost') {
-        return licenseLink ='[Boost](https://img.shields.io/badge/license-Boost-red)';
+    if (license === 'Apache2.0') {
+        return licenseLink =`[Apache](https://img.shields.io/badge/license-Apache2.0-red)`;
+    }else if ( license === 'MIT') {
+        return licenseLink =`[MIT](https://img.shields.io/badge/license-MIT-red)`;
+    }else if ( license === 'ISC') {
+        return licenseLink =`[ISC](https://img.shields.io/badge/license-ISC-red)`;
+    }else if ( license === 'Boost') {
+        return licenseLink =`[Boost](https://img.shields.io/badge/license-Boost-red)`;
     }else{
-        answers.license = "Not Applicable"
+        license = "Not Applicable"
     }
     return licenseLink;
 };
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-    
+    let licenseValue = license;
+    let licenseLink = '';
+
+    if (license === 'MIT') {
+        return `A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.`
+    }else if(license === 'Boost') {
+        return `A simple permissive license only requiring preservation of copyright and license notices for source (and not binary) distribution. Licensed works, modifications, and larger works may be distributed under different terms and without source code.`
+    }else if(license === 'Apache2.0') {
+        return `A permissive license whose main conditions require preservation of copyright and license notices. Contributors provide an express grant of patent rights. Licensed works, modifications, and larger works may be distributed under different terms and without source code.`
+    }else if(license === 'ISC') {
+        return `A permissive free software license published by the Internet Software Consortium, now called Internet Systems Consortium (ISC). It is functionally equivalent to the simplified BSD and MIT licenses, but without language deemed unnecessary following the Berne Convention.`
+    }else{
+        return " ";
+    }
 }
 
 // TODO: Create a function to generate markdown for README
@@ -76,6 +85,12 @@ function generateMarkdown(answers) {
   ## License 
   ${answers.license}
 
+  ${renderLicenseBadge(answers.license)}
+
+  ${renderLicenseLink(answers.license)}
+  
+  ${renderLicenseSection(answers.license)}
+
   ## Dependencies
   ${answers.dependencies}
   
@@ -90,7 +105,6 @@ function generateMarkdown(answers) {
   ${answers.repo}
   ${answers.username}
   ${answers.email}
-  
   `
 }
 

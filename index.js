@@ -31,7 +31,7 @@ const promptQuestions = () => {
             type: 'list',
             name: 'license',
             message: 'What kind of license should your project have?',
-            choices:['Apache2.0', 'MIT', 'ISC', 'CC', 'Boost'],
+            choices:['Apache2.0', 'MIT', 'ISC','Boost'],
         },
         {
             type: 'input',

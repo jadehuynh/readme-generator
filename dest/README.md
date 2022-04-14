@@ -1,9 +1,9 @@
-# ha
+# jade
 
-  ![badge](https://img.shields.io/badge/license-ISC-red)
+  ![badge](https://img.shields.io/badge/license-MIT-red)
   
   ## Description
-  ha
+  jade
   
   ## Table of Contents
   
@@ -16,28 +16,33 @@
   - [Questions](#questions)
   
   ## Installation 
-  ha
+  jade
   
   
   ## Usage 
-  ha
+  jade
   
   ## License 
-  ISC
+  MIT
+
+  ![MIT](https://img.shields.io/badge/license-MIT-red)
+
+  [MIT](https://img.shields.io/badge/license-MIT-red)
+  
+  A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
   ## Dependencies
-  ha
+  jade
   
   ## Contribution 
-  ha
+  jade
   
   ## Test
-  ha
+  jade
   
   ## Questions
   
-  ha
-  ha
-  ha
-  
+  jade
+  jade
+  jade
   
