@@ -107,7 +107,6 @@ const init = () => {
 // //  ${answers.email}
  
 // //  `
-// //  }
- promptQuestions();
-//  module.exports = generateMarkdown
- module.exports = init
+//  }
+
+//  promptQuestions();

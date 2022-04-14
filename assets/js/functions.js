@@ -9,7 +9,7 @@ const init = () => {
     fs.writeFileSync("./dest/README.md", generateReadMe)
 }
 
-
+module.exports = promptQuestions
 
 const generateMarkdown = (answers) => {
 return `# ${answers.title}
@@ -52,4 +52,5 @@ ${answers.email}
 
 `
 }
+
 init();
