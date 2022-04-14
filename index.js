@@ -61,11 +61,11 @@ const promptQuestions = () => {
        fs.writeFileSync("./dest/README.md", results)
     })
 };
-const init = () => {
-    console.log(data)
+// const init = () => {
+//     console.log(data)
     
-     fs.writeFileSync("./dest/README.md", generateReadMe)
- }
+//      fs.writeFileSync("./dest/README.md", generateReadMe)
+//  }
  
  
  
@@ -109,4 +109,6 @@ const init = () => {
 // //  `
 //  }
 
-//  promptQuestions();
+ promptQuestions();
+// module.exports = init
+module.exports = generateMarkdown
