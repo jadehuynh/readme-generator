@@ -69,4 +69,45 @@ const init = () => {
  
  
  
+//  const generateMarkdown = (answers) => {
+//  return `# ${answers.title}
  
+ 
+
+// //  ## Description
+// //  ${answers.description}
+ 
+// //  ## Table of Contents
+ 
+// //  - [Installation](#installation)
+// //  - [Usage](#Usage)
+// //  - [License](#License)
+// //  - [Contribution](#Contribution)
+// //  - [Test](#Test)
+ 
+// //  ## Installation
+// //  ${answers.installation}
+ 
+// //  ## Usage
+// //  ${answers.usage}
+ 
+// //  ## License
+// //  ${answers.license}
+ 
+// //  ## Contribution
+// //  ${answers.contributing}
+ 
+// //  ## Test Instructions
+// //  ${answers.test}
+ 
+// //  ## Questions
+ 
+// //  ${answers.repo}
+// //  ${answers.username}
+// //  ${answers.email}
+ 
+// //  `
+// //  }
+ promptQuestions();
+//  module.exports = generateMarkdown
+ module.exports = init
