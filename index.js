@@ -67,7 +67,7 @@ const promptQuestions = () => {
     //TODO: Create a function to write README file
     .then(data => {
        const results = generateMarkdown(data)
-       fs.writeFileSync("./dest/README.md", results)
+       fs.writeFileSync("./dest/NEWREADME.md", results)
     })
 };
 // Function call to initialize app

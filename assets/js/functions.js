@@ -25,13 +25,13 @@ function renderLicenseLink(license) {
     let licenseLink = '';
 
     if (license === 'Apache2.0') {
-        return licenseLink =`[Apache](https://img.shields.io/badge/license-Apache2.0-red)`;
+        return licenseLink =`[Click here to learn more on Apache 2.0 licensing](https://choosealicense.com/licenses/apache-2.0/)`;
     }else if ( license === 'MIT') {
-        return licenseLink =`[MIT](https://img.shields.io/badge/license-MIT-red)`;
+        return licenseLink =`[Click here to learn more on MIT licensing](https://choosealicense.com/licenses/mit/)`;
     }else if ( license === 'ISC') {
-        return licenseLink =`[ISC](https://img.shields.io/badge/license-ISC-red)`;
+        return licenseLink =`[Click here to learn more on ISC licensing](https://opensource.org/licenses/ISC)`;
     }else if ( license === 'Boost') {
-        return licenseLink =`[Boost](https://img.shields.io/badge/license-Boost-red)`;
+        return licenseLink =`[Click here to learn more on Boost licensing](https://choosealicense.com/licenses/bsl-1.0/)`;
     }else{
         license = "Not Applicable"
     }
@@ -60,6 +60,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(answers) {
   return `# ${answers.title}
 
+----
   ![badge](https://img.shields.io/badge/license-${answers.license}-red)
   
   ## Description
