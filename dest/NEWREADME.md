@@ -1,10 +1,10 @@
-# Origami
+# Jade's Application
 
 ----
   ![badge](https://img.shields.io/badge/license-MIT-red)
   
   ## Description
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, aliquid est. Esse expedita ratione laboriosam optio aperiam culpa exercitationem fuga est doloribus! Officia doloremque culpa mollitia esse ad impedit id.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore voluptas, ipsam iste eveniet veritatis quod dolorem consequatur repudiandae facilis est! Quam fuga corporis distinctio ex non hic esse quaerat.
   
   ## Table of Contents
   
@@ -17,11 +17,11 @@
   - [Questions](#questions)
   
   ## Installation 
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, aliquid est. Esse expedita ratione laboriosam optio aperiam culpa exercitationem fuga est doloribus! Officia doloremque culpa mollitia esse ad impedit id.
+  To install 'inquirer' use the commands 'npm i inquirer'
   
   
   ## Usage 
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, aliquid est. Esse expedita ratione laboriosam optio aperiam culpa exercitationem fuga est doloribus! Officia doloremque culpa mollitia esse ad impedit id.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore voluptas, ipsam iste eveniet veritatis quod dolorem consequatur repudiandae facilis est! Quam fuga corporis distinctio ex non hic esse quaerat.
   
   ## License 
   MIT
@@ -33,17 +33,17 @@
   A short and simple permissive license with conditions only requiring preservation of copyright and license notices. Licensed works, modifications, and larger works may be distributed under different terms and without source code.
 
   ## Dependencies
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, aliquid est. Esse expedita ratione laboriosam optio aperiam culpa exercitationem fuga est doloribus! Officia doloremque culpa mollitia esse ad impedit id.
+  To insta;; dependencies use the command 'npm i (name of dependency)'
   
   ## Contribution 
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, aliquid est. Esse expedita ratione laboriosam optio aperiam culpa exercitationem fuga est doloribus! Officia doloremque culpa mollitia esse ad impedit id.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore voluptas, ipsam iste eveniet veritatis quod dolorem consequatur repudiandae facilis est! Quam fuga corporis distinctio ex non hic esse quaerat.
   
   ## Test
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, aliquid est. Esse expedita ratione laboriosam optio aperiam culpa exercitationem fuga est doloribus! Officia doloremque culpa mollitia esse ad impedit id.
+  Use command 'npm test' to run tests
   
   ## Questions
   
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, aliquid est. Esse expedita ratione laboriosam optio aperiam culpa exercitationem fuga est doloribus! Officia doloremque culpa mollitia esse ad impedit id.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore voluptas, ipsam iste eveniet veritatis quod dolorem consequatur repudiandae facilis est! Quam fuga corporis distinctio ex non hic esse quaerat.
   jadehuynh
-  jadehuynh08@gmail.com
+  jadehuynh08@gmail.com; For any additional questions please do the following: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore voluptas, ipsam iste eveniet veritatis quod dolorem consequatur repudiandae facilis est! Quam fuga corporis distinctio ex non hic esse quaerat.
   

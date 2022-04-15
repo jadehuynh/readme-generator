@@ -17,7 +17,7 @@
     * Once questions have been answered, the 'NEWREADME.md' file will generate under the 'dest' folder
     * Click Preview README to see your file
 
-[Link to live video tutorial]()
+[Link to live video tutorial](https://youtu.be/waOGqcoQljI)
 
 [GitHub Repository Link](https://github.com/jadehuynh/readme-generator)
 

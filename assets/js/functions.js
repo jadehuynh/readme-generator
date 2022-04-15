@@ -104,7 +104,9 @@ function generateMarkdown(answers) {
   ## Questions
   
   ${answers.repo}
+
   ${answers.username}
+  
   ${answers.email}
   `
 }
